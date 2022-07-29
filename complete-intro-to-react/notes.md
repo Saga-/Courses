@@ -42,8 +42,6 @@
 * In the component where the portal is used, we now have access to all of the state of the component the portal is called in.
 * This completely removes the necessity to message between component as it is all contained within the one component's state.
 
-
-
 ## Open Questions
 1. How do services tie in? Custom Hooks?
 2. How do we manage child/grandchild to parent communication/mutation?
@@ -51,3 +49,9 @@
 
 ## Misc
 * I'm a little bit iffy with portals/elrefs
+
+# Intermediate React
+## Context
+* Contexts should only be used for *application level state* (users, themes, etc.)
+* Something that is used (or can be used) across all the application, like a Netflix user. (which has account management, lists, profiles etc)
+* Contexts can be hard to debug
