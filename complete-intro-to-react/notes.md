@@ -55,3 +55,10 @@
 * Contexts should only be used for *application level state* (users, themes, etc.)
 * Something that is used (or can be used) across all the application, like a Netflix user. (which has account management, lists, profiles etc)
 * Contexts can be hard to debug
+
+## Misc
+* I don't understand how SSR is being done on the tutorial 'Server Side Rendering'
+    * The package.json entries, the ClientApp & `hydrate()`, the url '/frontend' pm the index.js
+
+## Open Questions
+1. 
