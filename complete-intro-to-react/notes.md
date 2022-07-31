@@ -50,15 +50,22 @@
 ## Misc
 * I'm a little bit iffy with portals/elrefs
 
+----
+
 # Intermediate React
 ## Context
 * Contexts should only be used for *application level state* (users, themes, etc.)
 * Something that is used (or can be used) across all the application, like a Netflix user. (which has account management, lists, profiles etc)
 * Contexts can be hard to debug
 
+## Migration
+* When migrating to TS (or any other language), start with the 'leaf nodes' where components are not dependent on other components (i.e., a parent of any child component).
+
 ## Misc
 * I don't understand how SSR is being done on the tutorial 'Server Side Rendering'
     * The package.json entries, the ClientApp & `hydrate()`, the url '/frontend' pm the index.js
+* TypeScript with React seems far more complicated.
+    * I need to look into Generics especially
 
 ## Open Questions
 1. 
