@@ -66,6 +66,8 @@
     * The package.json entries, the ClientApp & `hydrate()`, the url '/frontend' pm the index.js
 * TypeScript with React seems far more complicated.
     * I need to look into Generics especially
+* Don't really understand how redux works in the redux section (`mapStateToProps`, `ReduxWrappedDetails`)
+
 
 ## Open Questions
 1. 
