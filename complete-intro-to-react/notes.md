@@ -61,6 +61,10 @@
 ## Migration
 * When migrating to TS (or any other language), start with the 'leaf nodes' where components are not dependent on other components (i.e., a parent of any child component).
 
+## Testing
+* Make the tests about the user should see/do and not the developer.
+    * i.e. 'the user should be able to see the correct thumbnail' and not 'the correct props have been passed to the component'
+
 ## Misc
 * I don't understand how SSR is being done on the tutorial 'Server Side Rendering'
     * The package.json entries, the ClientApp & `hydrate()`, the url '/frontend' pm the index.js
