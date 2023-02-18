@@ -82,3 +82,10 @@
 
   3. This `props.onSaveExpenses(expenseData)` calls the parent function inside the parent component.
   4. This is how to communicate from parent-child.
+
+#### Lifting State Up
+
+- See: https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25596024#overview Lifting State Up
+  Lifting state up refers to communicating state from a child to a parent and then down to a sibling of that child. It could also refer to keeping state within a parent of two siblings to ease communication between the two.
+
+It involves keeping state in one child, sending it to the parent (see the note above), then the parent passing it to the other sibling via props.
