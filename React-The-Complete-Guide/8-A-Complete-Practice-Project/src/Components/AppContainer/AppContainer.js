@@ -1,12 +1,12 @@
-import UserForm from "./UserForm/UserForm";
-import UserList from "./UserList/UserList";
-import { useState } from "react";
+import UserForm from './UI/UserForm';
+import UserList from './UserList/UserList';
+import { useState } from 'react';
 
 const AppContainer = () => {
   const [users, setUsers] = useState([]);
 
   function onAddUser(user) {
-    setUsers((prevState) => {
+    setUsers(prevState => {
       return [...prevState, { username: user.username, age: user.age }];
     });
   }
