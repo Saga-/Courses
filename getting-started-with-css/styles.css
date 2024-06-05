@@ -8,7 +8,7 @@
   --aqua: #86fbfb;
   --white: #f7f8fa;
   --font-size: 1.3rem;
-  --mono: "Oxygen mono", monospace;
+  --mono: 'Oxygen mono', monospace;
   --sans: Oxygen, sans-serif;
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
@@ -30,7 +30,9 @@ body {
   font-size: var(--font-size);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -44,9 +46,10 @@ a:hover {
 }
 
 /* Intro Styles */
-
 #intro {
-  padding-bottom: 10rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #intro p {
@@ -73,25 +76,20 @@ a:hover {
 
 /* Contact Me */
 #contact {
-  /* background-color: var(--plum);
-  color: var(--white);
-  font-size: 1rem;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem; */
-  background-color: var(--plum);
-  /* width: 400px; */
+  width: 400px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
   font-size: 1rem;
 }
 
+.section-plum {
+  background-color: var(--plum);
+}
 
 #contact p:last-child {
   margin-top: 3rem;
 }
-
 
 /* Navbar */
 nav {
@@ -124,7 +122,7 @@ nav li:first-child {
   text-align: center;
 }
 
-nav [class*="fa-"] {
+nav [class*='fa-'] {
   font-size: 150%;
   color: var(--aqua);
 }
@@ -136,7 +134,8 @@ nav a {
   display: block;
 }
 
-nav a:hover, nav [class*="fa-"]:hover  {
+nav a:hover,
+nav [class*='fa-']:hover {
   color: var(--magenta);
 }
 
@@ -144,11 +143,56 @@ nav a:hover, nav [class*="fa-"]:hover  {
   font-size: 1.2rem;
 }
 
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
+  color: var(--white);
+}
 
+.button:hover {
+  background-color: var(--hotmag);
+  color: var(--white);
+}
 
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    /* Center Bar */
+    margin: 0 auto;
+  }
 
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    /* Pushes the other items to the right, creating a gap */
+    margin-right: auto;
+  }
+}
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
 
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
 
-
-
+hr {
+  height: 2px;
+  background: linear-gradient(90deg, #ff17e4, #86fbfb);
+  padding: 0;
+  margin: 0;
+  border: none;
+}
